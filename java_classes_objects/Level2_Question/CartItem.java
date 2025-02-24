@@ -8,6 +8,7 @@ public class CartItem {
     private static CartItem[] cart = new CartItem[100];
     private static int itemCount = 0;
 
+    // Constructor
     public CartItem(String itemName, double price, int quantity) {
         this.itemName = itemName;
         this.price = price;
@@ -26,6 +27,7 @@ public class CartItem {
         return quantity;
     }
 
+    // Add item to the cart
     public static void addItemToCart(CartItem item) {
         if (itemCount < cart.length) {
             cart[itemCount] = item;
@@ -36,6 +38,7 @@ public class CartItem {
         }
     }
 
+    // Display the cart details
     public static void displayCartDetails() {
         double totalCost = 0.0;
         System.out.println("Shopping Cart Details:");
@@ -47,6 +50,7 @@ public class CartItem {
         System.out.println("Total Cost: " + totalCost);
     }
 
+    // Remove the item from cart item
     public static void removeItemFromCart(String itemName) {
         for (int i = 0; i < itemCount; i++) {
             if (cart[i].getItemName().equalsIgnoreCase(itemName)) {
@@ -62,6 +66,7 @@ public class CartItem {
     }
 
     public static void main(String[] args) {
+        // Creating the CatrtItem object
         CartItem item1 = new CartItem("Apple", 10.0, 2);
         CartItem item2 = new CartItem("Banana", 5.0, 5);
 

@@ -5,13 +5,15 @@ public class Item {
     private String itemName;
     private double price;
 
+    // Constructor
     public Item(String itemCode, String itemName, double price) {
-        
+
         this.itemCode = itemCode;
         this.itemName = itemName;
         this.price = price;
     }
 
+    // Display the details
     public void displayDetails() {
 
         System.out.println("Item Code: " + itemCode);

@@ -1,16 +1,18 @@
 package Level1_Question;
 
-public class BookDetails {
+public class Book {
     private String title;
     private String author;
     private double price;
 
-    public BookDetails(String title, String author, double price) {
+    // Constructor
+    public Book(String title, String author, double price) {
         this.title = title;
         this.author = author;
         this.price = price;
     }
 
+    // Display the Book Detail
     public void displayDetails() {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
@@ -18,7 +20,8 @@ public class BookDetails {
     }
 
     public static void main(String[] args) {
-        BookDetails book = new BookDetails("Art", "dev", 300);
+        // Create a Book Object
+        Book book = new Book("Art", "dev", 300);
         book.displayDetails();
     }
 }

@@ -14,6 +14,7 @@ public class MovieTicket {
     private double price;
     private boolean booked;
 
+    // Method to Book the Ticket
     public void bookedTicket(String movieName, String seatNumber, double price){
         if(!this.booked){
             this.movieName = movieName;
@@ -30,6 +31,7 @@ public class MovieTicket {
 
 
     public static void main(String[] args) {
+        // Create the m1 object
         MovieTicket m1 = new MovieTicket();
         m1.bookedTicket("Pk", "B1", 300);
         m1.bookedTicket("nmbkj", "B1", 1000000);

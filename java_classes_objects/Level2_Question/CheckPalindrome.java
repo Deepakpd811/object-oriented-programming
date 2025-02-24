@@ -8,11 +8,12 @@ package Level2_Question;
 public class CheckPalindrome {
 
     private String text;
-
+    // Constructor
     CheckPalindrome(String text){
         this.text = text;
     }
 
+    // Check the text is palindrome
     public boolean isPalindrome(){
         int j = this.text.length()-1;
         int i = 0;

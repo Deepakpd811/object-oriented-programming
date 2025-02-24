@@ -10,12 +10,14 @@ public class Student {
     private String rollNumber;
     private int marks;
 
+    // Constructor
     public Student(String name, String rollNumber, int marks) {
         this.name = name;
         this.rollNumber = rollNumber;
         this.marks = marks;
     }
 
+    // Method to calculate the Grade
     public String calculateGrade() {
         if (marks >= 90) {
             return "A";
@@ -29,7 +31,7 @@ public class Student {
             return "F";
         }
     }
-
+    // Display the Student details
     public void displayDetails() {
         String grade = calculateGrade();
         System.out.println("Name: " + name);
@@ -39,6 +41,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
+        // Creating the Student onject
         Student student1 = new Student("Rohit", "400", 88);
         student1.displayDetails();
     }

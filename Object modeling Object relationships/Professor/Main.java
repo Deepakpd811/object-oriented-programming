@@ -3,7 +3,7 @@ package Professor;
 public class Main {
     public static void main(String[] args) {
         // Create a new professor
-        Professor p1 = new Professor("John Doe");
+        Professor p1 = new Professor("newton");
         
         // Create a new course
         Course cs = new Course("CS101", p1);
