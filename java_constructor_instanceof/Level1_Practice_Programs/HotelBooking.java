@@ -1,4 +1,4 @@
-package Level1;
+
 
 public class HotelBooking {
     private String guestName;
@@ -26,8 +26,13 @@ public class HotelBooking {
         this.nights = another.nights;
     }
 
+    public int getNights() {
+        return nights;
+    }
+
     
     public static void main(String[] args) {
-        
+        HotelBooking h1 = new HotelBooking();
+        System.out.println(h1.getNights());
     }
 }

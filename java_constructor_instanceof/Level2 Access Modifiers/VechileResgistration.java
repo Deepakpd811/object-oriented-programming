@@ -12,7 +12,8 @@ class Vehicle {
     String vehicleType;
     static double registrationFee = 1200;
 
-    Vehicle(String ownerName, String vehicleType){
+    // parematrized constructor
+    Vehicle(String ownerName, String vehicleType) {
         this.ownerName = ownerName;
         this.vehicleType = vehicleType;
     }
@@ -35,15 +36,10 @@ class Vehicle {
 
 }
 
-
-
-
-
-
 public class VechileResgistration {
     public static void main(String[] args) {
-        Vehicle v1 = new Vehicle("Deepak","car");
-        Vehicle v2 = new Vehicle("ritick","truck");
+        Vehicle v1 = new Vehicle("Deepak", "car");
+        Vehicle v2 = new Vehicle("ritick", "truck");
 
         v1.displayVehicleDetails();
         v2.displayVehicleDetails();

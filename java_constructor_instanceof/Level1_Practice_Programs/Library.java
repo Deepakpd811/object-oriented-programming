@@ -1,4 +1,4 @@
-package Level1;
+
 
 public class Library {
 
@@ -7,6 +7,7 @@ public class Library {
     private double price;
     private boolean availability;
 
+    // parematrized constructor
     Library(String title, String author, double price){
         this.title = title;
         this.author = author;
@@ -14,6 +15,7 @@ public class Library {
         availability = true;
     }
 
+    // Method to check availability of book
     void borrowBook(){
         if(availability){
             availability = false;

@@ -1,12 +1,13 @@
-package Level1;
+
 
 public class Circle {
     private double radius;
     
+    // non-parematrized constructor
     Circle(){
         this(1.0); // constructor channing
     }
-
+    // parematrized constructor
     Circle(Double rad){
         this.radius = rad;
     }

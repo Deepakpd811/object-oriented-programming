@@ -14,18 +14,19 @@ class Products {
     int price;
     static int totalProducts;
 
-    Products(String productName, int price){
+    // parematrized constructor
+    Products(String productName, int price) {
         this.productName = productName;
         this.price = price;
         totalProducts++;
     }
 
-    void displayProductDetails(){
-        System.out.println("ProductName: "+ this.productName);
-        System.out.println("Price: "+ this.price);
+    void displayProductDetails() {
+        System.out.println("ProductName: " + this.productName);
+        System.out.println("Price: " + this.price);
     }
 
-    static void displayTotalProducts(){
+    static void displayTotalProducts() {
         System.out.println("Total: " + totalProducts);
     }
 
@@ -33,13 +34,12 @@ class Products {
 
 public class ProductInventory {
     public static void main(String[] args) {
-            Products p1 = new Products("laptop",70000);
-            Products p2 = new Products("tv",40000);
+        Products p1 = new Products("laptop", 70000);
+        Products p2 = new Products("tv", 40000);
 
-            p1.displayProductDetails();
-            
+        p1.displayProductDetails();
 
-            Products.displayTotalProducts();
+        Products.displayTotalProducts();
 
     }
 }

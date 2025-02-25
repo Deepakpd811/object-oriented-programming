@@ -14,6 +14,7 @@ public class Book {
     protected String title;
     private String author;
 
+    // parematrized constructor
     Book(String ISBN, String title, String author) {
         this.ISBN = ISBN;
         this.title = title;
@@ -30,12 +31,13 @@ public class Book {
 }
 
 class EBook extends Book {
-
+    // parematrized constructor
     EBook(String ISBN, String title, String author) {
-        
-        super(ISBN, title, author);
+
+        super(ISBN, title, author); // call parent constructor
     }
 
+    // Display book details
     public void displayEBook() {
         System.out.println("ISBN: " + ISBN);
         System.out.println("title: " + title);
@@ -46,6 +48,7 @@ class EBook extends Book {
 
 class Main {
     public static void main(String[] args) {
+        
         EBook b1 = new EBook("123B00", "ABC", "Raj");
         // b1.ISBN;
         b1.displayEBook();

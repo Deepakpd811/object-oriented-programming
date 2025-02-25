@@ -13,6 +13,7 @@ class Course {
     double fee;
     static String instituteName = "Chitkara";
 
+    // parematrized constructor
     Course(String courseName, int duration, double fee) {
         this.courseName = courseName;
         this.duration = duration;
@@ -41,7 +42,7 @@ public class OnlineFee {
         c2.displayCourseDetails();
 
         Course.updateInstituteName("cu");
-        
+
         c1.displayCourseDetails();
         c2.displayCourseDetails();
     }
