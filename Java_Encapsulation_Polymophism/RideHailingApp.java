@@ -112,14 +112,14 @@ interface GPS {
 public class RideHailingApp {
     public static void main(String[] args) {
         // Create Car, Bike, and Auto objects
-        Vehicle car = new Car("C101", "Alice", 10.0);
-        Vehicle bike = new Bike("B202", "Bob", 5.0);
-        Vehicle auto = new Auto("A303", "Charlie", 7.0);
+        Vehicle car = new Car("C101", "raj", 10.0);
+        Vehicle bike = new Bike("B202", "rohan", 5.0);
+        Vehicle auto = new Auto("A303", "john", 7.0);
 
         // Update locations
-        car.updateLocation("New York");
-        bike.updateLocation("Los Angeles");
-        auto.updateLocation("Chicago");
+        car.updateLocation("punjab");
+        bike.updateLocation("chandigarh");
+        auto.updateLocation("delhi");
 
         // Use polymorphism to handle different vehicle types
         displayVehicleDetails(car, 50.0);

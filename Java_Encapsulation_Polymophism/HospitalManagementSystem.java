@@ -113,8 +113,8 @@ interface MedicalRecord {
 public class HospitalManagementSystem {
     public static void main(String[] args) {
         // Create InPatient and OutPatient objects
-        Patient inPatient = new InPatient("101", "Alice", 30, 5, 500);
-        Patient outPatient = new OutPatient("102", "Bob", 25, 3, 200);
+        Patient inPatient = new InPatient("101", "rahul", 30, 5, 500);
+        Patient outPatient = new OutPatient("102", "deepak", 25, 3, 200);
 
         // Set medical records
         inPatient.addRecord("Diagnosis: Fever");
