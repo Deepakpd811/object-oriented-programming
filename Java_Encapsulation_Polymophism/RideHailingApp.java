@@ -1,6 +1,11 @@
 package Java_Encapsulation_Polymophism;
 
-// Abstract class representing a Vehicle
+interface GPS {
+    void updateLocation(String location);
+    String getCurrentLocation();
+}
+
+
 abstract class Vehicle implements GPS {
     private String vehicleId;
     private String driverName;
@@ -60,7 +65,7 @@ abstract class Vehicle implements GPS {
     }
 }
 
-// Car subclass
+
 class Car extends Vehicle {
     // Constructor
     public Car(String vehicleId, String driverName, double ratePerKm) {
@@ -74,7 +79,6 @@ class Car extends Vehicle {
     }
 }
 
-// Bike subclass
 class Bike extends Vehicle {
     // Constructor
     public Bike(String vehicleId, String driverName, double ratePerKm) {
@@ -88,7 +92,7 @@ class Bike extends Vehicle {
     }
 }
 
-// Auto subclass
+
 class Auto extends Vehicle {
     // Constructor
     public Auto(String vehicleId, String driverName, double ratePerKm) {
@@ -102,11 +106,8 @@ class Auto extends Vehicle {
     }
 }
 
-// GPS interface
-interface GPS {
-    void updateLocation(String location);
-    String getCurrentLocation();
-}
+
+
 
 
 public class RideHailingApp {
