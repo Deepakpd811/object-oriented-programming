@@ -1,4 +1,5 @@
-package Encapsulation;
+package Java_Encapsulation_Polymophism;
+
 
 // Loanable interface
 interface Loanable {

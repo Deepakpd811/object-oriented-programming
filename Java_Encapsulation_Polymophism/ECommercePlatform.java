@@ -1,3 +1,5 @@
+package Java_Encapsulation_Polymophism;
+
 // Abstract class Product
 abstract class Product {
     private String productId; // Encapsulated field

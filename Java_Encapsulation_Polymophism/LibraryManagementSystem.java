@@ -1,4 +1,6 @@
-package Encapsulation;
+package Java_Encapsulation_Polymophism;
+
+
 
 // Reservable interface
 interface Reservable {
@@ -17,6 +19,7 @@ abstract class LibraryItem {
         this.title = title;
         this.author = author;
     }
+    
 
     // Concrete method
     public void getItemDetails() {
